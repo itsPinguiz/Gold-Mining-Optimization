@@ -37,8 +37,8 @@ def run_tests(solution_func):
 
         # Edge Cases
         # alpha or beta = 0
-        #(100, 0.2, 0, 1), (100, 0.2, 1, 0),
-        #(1000, 1, 0, 1), (1000, 1, 1, 0)   
+        (100, 0.2, 0, 1), (100, 0.2, 1, 0),
+        (1000, 1, 0, 1), (1000, 1, 1, 0)   
     ]
     
     print(f"{'N':<6} | {'Dens':<5} | {'Alpha':<5} | {'Beta':<5} | {'Cost':<15} | {'vs Base %':<10} | {'Time':<8} | {'Status'}")
@@ -49,7 +49,6 @@ def run_tests(solution_func):
     
     for n, dens, alpha, beta in test_cases:
         # Create a specific problem instance
-        # Note: We use a fixed seed (42) here for reproducibility during testing
         p = Problem(n, density=dens, alpha=alpha, beta=beta, seed=42)
         
         start = time.time()

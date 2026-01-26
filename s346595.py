@@ -9,7 +9,8 @@ def solution(problem_instance):
     path = my_genetic_algorithm(problem_instance)
     return path
 
-# Optional: Keep the test execution here if you want to run this file directly
+""" 
 if __name__ == "__main__":
     from src.utils import run_tests
     run_tests(solution)
+"""
