@@ -78,6 +78,9 @@ def run_tests(solution_func, test_cases=None):
         test_cases: Optional list of (n, density, alpha, beta) tuples. 
                    If None, uses default test cases.
     """
+    # Setup logger
+    logger, log_file = setup_logger()
+    
     test_cases = [
         # N=100
         (100, 0.2, 1, 1), (100, 0.2, 2, 1), (100, 0.2, 1, 2),
