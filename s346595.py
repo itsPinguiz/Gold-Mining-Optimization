@@ -20,6 +20,7 @@ def solution(P: Problem):
     
     return formatted_path
 
+"""
 # Optional for testing
 if __name__ == "__main__":
     from src.utils import run_tests
@@ -31,3 +32,4 @@ if __name__ == "__main__":
         return [city for city, gold in formatted]
     
     run_tests(solution_for_eval)
+"""
